@@ -8,10 +8,13 @@
     <title>Portfolio</title>
 
 
+    <div w3-include-html="files/sidebar.html"></div> 
+    <div w3-include-html="files/portfolio.html"></div>
+
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/bootstrap.css" crossorigin="anonymous">
-    <script src="/js/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="/js/jquery-3.3.1.min.js"  crossorigin="anonymous"></script>
     <script src="/js/popper.min.js"  crossorigin="anonymous"></script>
     <script src="/js/bootstrap.min.js"  crossorigin="anonymous"></script>
 
@@ -32,16 +35,20 @@
                 </div>
                 <div class="col-sm-9" style="padding-left: 0px">
                     <div id="content">
+                        <div id="portfolio"></div>
+                        <div id="skill"></div>
+                        <div id="contact"></div>
                         <div class="home-section">
                             <div class="home-heading">
                                 Hi, I'm Tahmid.
+                                
                             </div>
                             <h2 class="home-subheading">
                                 <p>I am a web developer specialised in</p>
                                 <strong>both front-end and back-end web development.</strong>
                             </h2>
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -52,22 +59,13 @@
 </body>
 
 <script>
-  $(document).ready(function () {
-    
-  var xhttp;
-  if (window.XMLHttpRequest) {
-    // code for modern browsers
-    xhttp = new XMLHttpRequest();
-    } else {
-    // code for IE6, IE5
-    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
-  }
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("sidebar").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET", "files/sidebar.html", true);
-  xhttp.send();
+$(document).ready(function(){
+    $("#portfolio").load("files/portfolio.html");
+    $("#skill").load("files/skill.html");
+    $("#contact").load("files/contact.html");
+    $("#sidebar").load("files/sidebar.html");
+      
 });
+
+
 </script>
