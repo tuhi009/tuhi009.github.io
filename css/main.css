@@ -233,13 +233,18 @@
 
 
 }
-
-#contact-section .main-section {
-    /*max-width: 850px;*/
-    padding: 50px;
-    background-color: #fff;
-    color: #333;
+#contact-section {
+    display: flow-root;
+    background-color: rgb(246, 246, 246);
 }
+
+#contact-section .container {
+    padding-top: 50px;
+    float: left;
+    background-color: white;
+    height: 100vh;
+}
+
 
 .dl-vertical {
     overflow: hidden;
