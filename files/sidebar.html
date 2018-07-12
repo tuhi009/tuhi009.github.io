@@ -32,6 +32,7 @@
         $('#skills-section').hide();
         $('#portfolio-section').hide();
         $('#contact-section').hide();
+        $('#about-section').hide();
 
         $('ul.nav > li').click(function (e) {
             e.preventDefault();
@@ -45,7 +46,7 @@
             $('#portfolio-section').hide();
             $('#contact-section').hide();
             $('#skills-section').hide();
-            
+            $('#about-section').hide();
             $('.sidebar-main').css('height', '100vh');
         });
 
@@ -55,6 +56,7 @@
             $('#portfolio-section').hide();
             $('#contact-section').hide();
             $('#skills-section').show();
+            $('#about-section').hide();
             $('.sidebar-main').css('height', 'auto');
         });
         $('#nav2').click(function (e) {
@@ -63,7 +65,7 @@
             $('#skills-section').hide();
             $('#contact-section').hide();
             $('#portfolio-section').show();
-
+            $('#about-section').hide();
         })
         $('#nav3').click(function (e) {
             e.preventDefault();
@@ -71,7 +73,16 @@
             $('#skills-section').hide();
             $('#portfolio-section').hide();
             $('#contact-section').show();
-
+            $('#about-section').hide();
+        })
+        $('#nav4').click(function (e) {
+            e.preventDefault();
+            $('.home-section').hide();
+            $('#skills-section').hide();
+            $('#portfolio-section').hide();
+            $('#contact-section').hide();
+            $('#about-section').show();
+            $('.sidebar-main').css('height', '100vh');
         })
     });
 

@@ -258,3 +258,19 @@
     margin: 0;
 }
 /*//////////////////////////// Contact Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*//////////////////////////// About Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#about-section {
+    display: flow-root;
+    background-color: rgb(246, 246, 246);
+}
+
+#about-section .container {
+    padding-top: 50px;
+    float: left;
+    background-color: white;
+    height: 100vh;
+}
+
+
+/*//////////////////////////// Portfolio Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
