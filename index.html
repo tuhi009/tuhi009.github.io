@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="Eng">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Portfolio</title>
+
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.css" crossorigin="anonymous">
+    <script src="/js/jquery-3.2.1.slim.min.js"  crossorigin="anonymous"></script>
+    <script src="/js/popper.min.js"  crossorigin="anonymous"></script>
+    <script src="/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+    <!-- Font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="/css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="col-sm-3 sidebar-main"  style="padding-right: 0px;">
+                    <div id="sidebar"></div>
+                </div>
+                <div class="col-sm-9" style="padding-left: 0px">
+                    <div id="content"></div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+  
+</body>
+
+<script>
+  $(document).ready(function () {
+    
+  var xhttp;
+  if (window.XMLHttpRequest) {
+    // code for modern browsers
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("sidebar").innerHTML = this.responseText;
+      document.getElementById("content").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET", "sidebar.html", true);
+  xhttp.send();
+});
+</script>

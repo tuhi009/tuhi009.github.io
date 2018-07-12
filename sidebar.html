@@ -1,0 +1,67 @@
+<div class="sidebar-inner">
+    <div class="profile-card" >
+        <img src="{{ asset('frontpage/images/profile_pic.png') }}" class="img-fluid rounded-circle" alt="....">
+        <h2>Welcome</h2>
+        <h5>Full stack</h5>
+    </div>
+    <br>
+
+    <ul class="nav flex-column main-navigation">
+        <li  class="nav-item">
+            <a id="nav1" class="nav-link active" href="#">my skills & offer</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav2" class="nav-link active" href="#">portfolio</a>
+        </li>
+        <li class="nav-item">
+            <a id="nav3" class="nav-link active" href="#">contact</a>
+        </li>
+        <br>
+        <li class="nav-item">
+            <a id="nav4" class="nav-link active" href="#">about me</a>
+        </li>
+    </ul>
+
+</div>
+    <script>
+
+
+       $(document).ready(function () {
+           $('#skills-section').hide();
+           $('#portfolio-section').hide();
+           $('#contact-section').hide();
+
+            $('ul.nav > li').click(function (e) {
+                e.preventDefault();
+                $('ul.nav > li').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            $('#nav1').click(function (e) {
+                e.preventDefault();
+                $('.home-section').hide();
+                $('#portfolio-section').hide();
+                $('#contact-section').hide();
+                $('#skills-section').show();
+                $('.sidebar-main').css('height','auto');
+            });
+           $('#nav2').click(function (e) {
+               e.preventDefault();
+               $('.home-section').hide();
+               $('#skills-section').hide();
+               $('#contact-section').hide();
+               $('#portfolio-section').show();
+
+           })
+           $('#nav3').click(function (e) {
+               e.preventDefault();
+               $('.home-section').hide();
+               $('#skills-section').hide();
+               $('#portfolio-section').hide();
+               $('#contact-section').show();
+
+           })
+        });
+
+
+    </script>

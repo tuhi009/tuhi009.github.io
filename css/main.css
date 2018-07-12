@@ -1,0 +1,260 @@
+@font-face {
+    font-family: Roboto-Light;
+    src: url('/frontpage/fonts/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: Roboto-Medium;
+    src: url('/frontpage/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: FontAwesome;
+    src: url('/frontpage/fonts/fontawesome-webfont.ttf');
+}
+
+#app{
+    font: 16px/1.6 Roboto,Helvetica,sans-serif;
+    background-image: url("/frontpage/images/backend.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*//////////////////////////// SIDE BAR Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+.sidebar-main{
+    background: rgba(145,13,13,0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+}
+
+.sidebar-inner{
+    top: 0;
+    position: sticky;
+
+}
+
+.profile-card{
+    padding-top: 100px;
+    text-align: center;
+
+}
+.profile-card h2{
+
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    position: sticky;
+}
+.profile-card h5{
+
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.main-navigation a{
+    color: rgba(255,255,255,.6);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.main-navigation > li > a:hover, .main-navigation > li > a:focus {
+
+    color: white;
+
+}
+.main-navigation > li > a:hover:after, .main-navigation > li > a:focus:after {
+
+    content: " \f105";
+    padding-left: 3px;
+    font-family: FontAwesome;
+
+}
+
+@media only screen and (min-width: 768px)  {
+    .main-navigation li.active:after{
+
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+        border-right: 8px solid #fff;
+
+        left: auto;
+        right: 0;
+    }
+
+}
+
+
+
+    /*//////////////////////////// SIDE BAR End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+    /*//////////////////////////// Home Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+
+.home-section{
+    padding-left: 110px;
+    padding-top: 130px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.6);
+
+}
+
+.home-heading{
+    font-size: 4em;
+    font-weight: 500;
+    color: white;
+
+}
+
+.home-subheading{
+
+    text-transform: none;
+    color: white;
+}
+
+
+
+/*//////////////////////////// Home Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*//////////////////////////// Skills Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media only screen and (min-width: 768px)  {
+    #skills-section .container{
+        padding-left: 50px;
+    }
+}
+
+#skills-section{
+    display: flow-root;
+    background-color: #f6f6f6;
+}
+#skills-section .container{
+    padding-top: 50px;
+    float: left;
+    background-color: white;
+
+}
+
+.red {
+    color: #BB1E1E;
+}
+
+
+
+/*//////////////////////////// Skills Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+
+/*//////////////////////////// Portfolio Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#portfolio-section {
+    display: flow-root;
+    background-color: rgb(246, 246, 246);
+}
+
+#portfolio-section .container {
+    padding-top: 50px;
+    float: left;
+    background-color: white;
+}
+
+.portfolio-timeline .project-link {
+    color: inherit;
+    text-decoration: none
+}
+
+.portfolio-timeline .project-link:hover {
+    color: #BB1E1E
+}
+
+.portfolio-timeline .project-text {
+    width: 50%;
+    float: left
+}
+
+@media (max-width:1023px) {
+    .portfolio-timeline .project-text {
+        width: auto;
+        float: none
+    }
+}
+
+.portfolio-timeline .timeline_element.timeline_element--now .project-text {
+    width: auto;
+    float: none
+}
+
+.portfolio-timeline .project-image {
+    width: 50%;
+    padding-left: 30px;
+    text-align: center;
+    float: left
+}
+
+@media (max-width:1023px) {
+    .portfolio-timeline .project-image {
+        width: auto;
+        float: none;
+        margin-top: 30px;
+        padding-left: 0
+    }
+}
+
+.portfolio-timeline .project-image img {
+    max-width: 100%;
+    max-height: 568px
+}
+
+.portfolio-timeline .project-description:not(:first-child) {
+    margin-top: 15px
+}
+
+.portfolio-timeline .project-description:not(:last-child) {
+    margin-bottom: 15px
+}
+
+.portfolio-timeline .project-technologies {
+    margin-top: 30px
+}
+/*//////////////////////////// Portfolio Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*//////////////////////////// Contact Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#contact-section{
+
+
+}
+
+#contact-section .main-section {
+    /*max-width: 850px;*/
+    padding: 50px;
+    background-color: #fff;
+    color: #333;
+}
+
+.dl-vertical {
+    overflow: hidden;
+}
+
+.dl-vertical dt {
+    display: block;
+    float: left;
+    clear: both;
+    width: 150px;
+}
+
+.dl-vertical dd {
+    display: block;
+    float: left;
+    margin: 0;
+}
+/*//////////////////////////// Contact Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
