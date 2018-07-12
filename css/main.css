@@ -14,7 +14,7 @@
 
 #app{
     font: 16px/1.6 Roboto,Helvetica,sans-serif;
-    background-image: url("/frontpage/images/backend.jpg");
+    background-image: url("/images/backend.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-font-smoothing: antialiased;

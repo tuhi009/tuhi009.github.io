@@ -31,7 +31,18 @@
                     <div id="sidebar"></div>
                 </div>
                 <div class="col-sm-9" style="padding-left: 0px">
-                    <div id="content"></div>
+                    <div id="content">
+                        <div class="home-section">
+                            <div class="home-heading">
+                                Hi, I'm Tahmid.
+                            </div>
+                            <h2 class="home-subheading">
+                                <p>I am a web developer specialised in</p>
+                                <strong>both front-end and back-end web development.</strong>
+                            </h2>
+                        </div>
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,10 +65,9 @@
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("sidebar").innerHTML = this.responseText;
-      document.getElementById("content").innerHTML = this.responseText;
     }
   };
-  xhttp.open("GET", "sidebar.html", true);
+  xhttp.open("GET", "files/sidebar.html", true);
   xhttp.send();
 });
 </script>
