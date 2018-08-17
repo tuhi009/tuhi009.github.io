@@ -157,6 +157,13 @@
 
 
 /*//////////////////////////// Portfolio Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+@media only screen and (min-width: 768px)  {
+    #portfolio-section .container{
+        padding-left: 50px;
+    }
+}
+
 #portfolio-section {
     display: flow-root;
     background-color: rgb(246, 246, 246);
@@ -229,10 +236,11 @@
 /*//////////////////////////// Portfolio Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*//////////////////////////// Contact Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
-#contact-section{
 
-
+#contact-section .container{
+    padding-left: 50px;
 }
+
 #contact-section {
     display: flow-root;
     background-color: rgb(246, 246, 246);
@@ -265,6 +273,11 @@
 /*//////////////////////////// Contact Section End \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*//////////////////////////// About Section Start \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+#about-section .container{
+    padding-left: 50px;
+}
+
+
 #about-section {
     display: flow-root;
     background-color: rgb(246, 246, 246);
